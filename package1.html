@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Safari</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -13,14 +14,13 @@
   <link href="assets/img/services/pexels-jonathanschmer-3272589.jpg" rel="apple-touch-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -28,6 +28,190 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+   
+    .card{
+      position: relative;
+
+    }
+    .card span{
+
+      position: absolute;
+  top: 0px;
+  left:0px;
+  width: 70px;
+  padding: 30px;
+     
+    }
+
+    .facebook-link {
+    display: inline-block; /* Ensures the link container only takes up the necessary space */
+    vertical-align: middle; /* Aligns the icon vertically in the middle of the line */
+}
+
+.facebook-link i {
+    color: black; /* Change the color to black */
+}
+
+.tour-header::after{
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #bf0010
+}
+
+.tour-header{
+    font-size: 40px;
+    line-height: 1.125em;
+    color: #111;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.days{
+  color: black;
+}
+
+.ourBadge {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .04), 0px 0px 2px rgba(0, 0, 0, .06), 0px 0px 1px rgba(0, 0, 0, .04);
+    position: absolute;
+    left: 49%;
+    top: 160px  ;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 996px) {
+    .col-6 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+   
+    .carousel {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    .ourBadge {
+      left:53%;
+      top:160px
+        
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 180px;
+    }
+}
+
+
+/* Additional responsive styling */
+@media screen and (max-width: 995px) and (min-width: 876px) {
+    .col-6, .col-2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    .ourBadge {
+      left:80%;
+      top:13.5%;
+      display: block;
+    }
+
+    .card {
+        width: 100%;
+        top:-80px;
+    }
+}
+
+@media screen and (max-width: 875px) and (min-width: 720px) {
+    .col-6, .col-2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    .ourBadge {
+      left:85%;
+      top:13.5%;
+      display: block;
+    }
+
+    .card {
+        width: 100%;
+        top:-80px;
+    }
+}
+@media screen and (max-width: 715px) and (min-width: 501px) {
+    .col-6, .col-2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    .ourBadge {
+      left: 89%;
+      top:14.5%;
+      display: block;
+    }
+
+    .card {
+        width: 100%;
+        top:-80px;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 400px) {
+    .col-6, .col-2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    .ourBadge {
+      left: 84%;
+      top:14.5%;
+      display: block;
+    }
+
+    .card {
+        width: 100%;
+        top:-80px;
+    }
+}
+
+
+
+
+  </style>
 </head>
 
 <body>
@@ -38,11 +222,14 @@
 
       <div class="logo">
         <h1 class="text-light"><a href="index.html"><span>Safari</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about">About Us</a></li> -->
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -51,230 +238,216 @@
       </nav>
 
     </div>
-  </header>
+</header>
+
+
 
   <main id="main">
 
    <!-- Package Section -->
 
-   
    <section class="container">
-    <div class="row" style="position: relative;">
-        <div class="col-lg-6">
-            <h1 class="text-right tour-header">Siwa Oasis 3 Days Package from Cairo </h1>
-            <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init
-            style="width: 100%;">
-            
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./package1/1.jpg" class="d-block w-100" alt="Wild Landscape">
-                </div>
-                <!-- Add more carousel items as needed -->
-                <div class="carousel-item">
-                  <img src="./package1/2.jpg" class="d-block w-100" alt="Camera">
-                </div>
-                <div class="carousel-item">
-                  <img src="./package1/3.jpg" class="d-block w-100" alt="Exotic Fruits">
-                </div>
-                <div class="carousel-item">
-                  <img src="./package1/4.jpg" class="d-block w-100" alt="Exotic Fruits">
-                </div>
-                <div class="carousel-item">
-                  <img src="./package1/5.jpg" class="d-block w-100" alt="Exotic Fruits">
-                </div>
-                <div class="carousel-item">
-                  <img src="./package1/6.jpg" class="d-block w-100" alt="Exotic Fruits">
-                </div>
-                <div class="carousel-item">
-                  <img src="./package1/7.jpg" class="d-block w-100" alt="Exotic Fruits">
-                </div>
-                <div class="carousel-item">
-                  <img src="./package1/8.jpg" class="d-block w-100" alt="Exotic Fruits">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
-                <span class="visually                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-        <div class="col-lg-2" style="height: 100px;">
-            <div style="width: 70px;
-                        display: flex;
-                        flex-direction: column;
-                        overflow: hidden;
-                        border-radius: 4px;
-                        box-shadow: 0px 4px 8px rgba(0, 0, 0, .04), 0px 0px 2px rgba(0, 0, 0, .06), 0px 0px 1px rgba(0, 0, 0, .04);
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        ">
-                <span class="periodNumber">3</span>
-                <span class="days">Days</span>
-            </div>
+    <div class="row">
+      <!-- Header and Badge Column -->
+      <div class="col-lg-6">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <!-- Header -->
+          <h1 class="text-right tour-header">Siwa Oasis 3 Days Package from Cairo</h1>
+          <!-- Badge -->
+          <div class="ourBadge">
+            <span class="periodNumber">3</span>
+            <span class="days">Days</span>
+          </div>
         </div>
-      
-      </div>
-      <div class="card text-dark bg-light mb-3"  style="width: 21rem;
-                                                     height: 300px;
-                                                     margin-left: 123px;
-                                                     margin-top: 150px;
-                                                     border-radius: 15px;">
-        <div class="container">
-          <div class="card-body" style="margin-top: 40px;" >
-            <div style="display: flex; align-items: center; flex-direction: column;">
-              <p style="font-size: 19px; font-weight: 600; width: 140px;">370 $ <em style="color: rgb(175, 175, 175);
-              font-weight: 700;">/ Private</em></p>
-              <p style="font-size: 19px; font-weight: 600; margin-right: 20px;"> 250 $ <em style="color: rgb(175, 175, 175);
-                font-weight: 700;">/ Shared</em></p>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./package1/1.jpg" class="d-block w-100" alt="Wild Landscape" style="overflow: hidden; border-radius: 15px;">
             </div>
+            <div class="carousel-item">
+              <img src="./package1/2.jpg" class="d-block w-100" alt="Camera">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next"
+          style="margin-right: 20px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Card Column -->
+      <div class="col-lg-6" style="margin-top: 180px;position: relative;" >
+        <div class="card text-dark bg-light mb-3"  style="width: 19rem; margin: auto;">
+          <div class="container">
+            <div class="card-body">
+              <div style="display: flex; align-items: center; flex-direction: column;">
+                <p style="font-size: 19px; font-weight: 600; width: 140px;">370 $ <em style="color: rgb(175, 175, 175); font-weight: 700;">/ Private</em></p>
+                <p style="font-size: 19px; font-weight: 600; margin-right: 20px;"> 250 $ <em style="color: rgb(175, 175, 175); font-weight: 700;">/ Shared</em></p>
+              </div>
               <div class="container">
-                <button class="btn btn-danger text-center mt-4 p-3" style="margin-left: 10px; 
-                border-radius: 15px;"> Reserve Your Package</button>
+                <button class="btn btn-danger text-center mt-4 p-3" style="margin-left: 10px; border-radius: 15px;"> Reserve Your Package</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container">
+
+    <h1 class="text-right tour-header" style="margin-top: 30px;">Details</h1>
+
+    <div class="container mt-4" style="margin-bottom: 60px;">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="dayTabs" role="tablist">
+          <li class="nav-item">
+              <a class="nav-link active" id="day1-tab" data-bs-toggle="tab" href="#day1" role="tab" aria-controls="day1" aria-selected="true">Day 1</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="day2-tab" data-bs-toggle="tab" href="#day2" role="tab" aria-controls="day2" aria-selected="false">Day 2</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="day3-tab" data-bs-toggle="tab" href="#day3" role="tab" aria-controls="day3" aria-selected="false">Day 3</a>
+          </li>
+      </ul>
+  
+      <!-- Tab panes -->
+      <div class="tab-content mt-3">
+          <!-- Day 1 Content -->
+          <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+              <div class="p-3 border bg-light">
+                  <h5>Day 1</h5>
+                  <ul >
+                      <li class="p-1">Arrival and accommodation at Camp Cafour</li>
+                      <li class="p-1">Have a Breakfast</li>
+                      <li class="p-1">Visit the sunset island which is considered a natural masterpiece</li>
+                      <li class="p-1">The sunset goes down in the water and the mountains creating a beautiful scene</li>
+                      <li class="p-1">Return to the Camp and have dinner at the camp which has hot spring and sulfur pool</li>
+                  </ul>
               </div>
           </div>
-    </div>
-    </div>
-    <div class="container">
-
-      <h1 class="text-right tour-header" style="margin-top: 30px;">Details</h1>
-
-      <div class="container mt-4" style="margin-bottom: 60px;">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="dayTabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="day1-tab" data-bs-toggle="tab" href="#day1" role="tab" aria-controls="day1" aria-selected="true">Day 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="day2-tab" data-bs-toggle="tab" href="#day2" role="tab" aria-controls="day2" aria-selected="false">Day 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="day3-tab" data-bs-toggle="tab" href="#day3" role="tab" aria-controls="day3" aria-selected="false">Day 3</a>
-            </li>
-        </ul>
-    
-        <!-- Tab panes -->
-        <div class="tab-content mt-3">
-            <!-- Day 1 Content -->
-            <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
-                <div class="p-3 border bg-light">
-                    <h5>Day 1</h5>
-                    <ul >
-                        <li class="p-1">Arrival and accommodation at Camp Cafour</li>
-                        <li class="p-1">Have a Breakfast</li>
-                        <li class="p-1">Visit the sunset island which is considered a natural masterpiece</li>
-                        <li class="p-1">The sunset goes down in the water and the mountains creating a beautiful scene</li>
-                        <li class="p-1">Return to the Camp and have dinner at the camp which has hot spring and sulfur pool</li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Day 2 Content -->
-            <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
-                <div class="p-3 border bg-light">
-                    <h5>Day 2</h5>
-                    <ul >
-                        <li class="p-1">Have breakfast</li>
-                        <li class="p-1">Visit Oracle Temple - Explore the only revelation temple in Egypt, rich in historical significance.</li>
-                        <li class="p-1">Visit Shali Castle - Discover the ancient fortress of Shali Castle</li>
-                        <li class="p-1">Explore Siwa Salt Lakes - Swim in the buoyant, magical-colored salt lakes, which have a higher salt density than the Dead Sea.</li>
-                        <li class="p-1">Visit Cleopatra’s Sulphurous Spring - Swim in the natural, mineral-rich spring amidst lush gardens and palm leaves.</li>
-                        <li class="p-1">Sand Sea Safari Adventure - Engage in a thrilling dune adventure with four-wheel drive vehicles, sandboarding, and a photo session. Visit a year-round hot water lake and spring beneficial for bones, then enjoy a sunset in the desert and camp overnight with a traditional Siwa dinner.</li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Day 3 Content -->
-            <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
-                <div class="p-3 border bg-light">
-                    <h5>Day 3</h5>
-                    <ul >
-                        <li class="p-1">Have a Breakfast</li>
-                        <li class="p-1">Prepare luggage and return to Cairo</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-      <h1 class="text-right tour-header"> Features</h1>
-      <ol>
-        <li class="fs-5 fw-semibold">Transportation</li>
-        <li class="fs-5 fw-semibold">Accommodation at Camp Cafour - Half Board (3 Days - 2 Nights)</li>
-        <li class="fs-5 fw-semibold">Sunset Island</li>
-        <li class="fs-5 fw-semibold">Oracle Temple</li>
-        <li class="fs-5 fw-semibold">Shali Castle</li>
-        <li class="fs-5 fw-semibold">Salt lake</li>
-       
-        <li class="fs-5 fw-semibold">Cleopatra Springs</li>
-        <li class="fs-5 fw-semibold">Safari</li>
-      </ol>
-    </div>
- </section>
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact section-bg">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>Contact</h2>
+  
+          <!-- Day 2 Content -->
+          <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+              <div class="p-3 border bg-light">
+                  <h5>Day 2</h5>
+                  <ul >
+                      <li class="p-1">Have breakfast</li>
+                      <li class="p-1">Visit Oracle Temple - Explore the only revelation temple in Egypt, rich in historical significance.</li>
+                      <li class="p-1">Visit Shali Castle - Discover the ancient fortress of Shali Castle</li>
+                      <li class="p-1">Explore Siwa Salt Lakes - Swim in the buoyant, magical-colored salt lakes, which have a higher salt density than the Dead Sea.</li>
+                      <li class="p-1">Visit Cleopatra’s Sulphurous Spring - Swim in the natural, mineral-rich spring amidst lush gardens and palm leaves.</li>
+                      <li class="p-1">Sand Sea Safari Adventure - Engage in a thrilling dune adventure with four-wheel drive vehicles, sandboarding, and a photo session. Visit a year-round hot water lake and spring beneficial for bones, then enjoy a sunset in the desert and camp overnight with a traditional Siwa dinner.</li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Day 3 Content -->
+          <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+              <div class="p-3 border bg-light">
+                  <h5>Day 3</h5>
+                  <ul >
+                      <li class="p-1">Have a Breakfast</li>
+                      <li class="p-1">Prepare luggage and return to Cairo</li>
+                  </ul>
+              </div>
+          </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="info-box mb-4">
-            <i class="bi bi-whatsapp"></i>
-            <h3>Whatsapp</h3>
-            <a href="https://wa.me/+201065081826" target="_blank">
-              <p style="font-weight: bolder;">+20 106 508 1826</p>
+  </div>
+    <h1 class="text-right tour-header"> Features</h1>
+    <ol>
+      <li class="fs-5 fw-semibold">Transportation</li>
+      <li class="fs-5 fw-semibold">Accommodation at Camp Cafour - Half Board (3 Days - 2 Nights)</li>
+      <li class="fs-5 fw-semibold">Sunset Island</li>
+      <li class="fs-5 fw-semibold">Oracle Temple</li>
+      <li class="fs-5 fw-semibold">Shali Castle</li>
+      <li class="fs-5 fw-semibold">Salt lake</li>
+     
+      <li class="fs-5 fw-semibold">Cleopatra Springs</li>
+      <li class="fs-5 fw-semibold">Safari</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="info-box mb-4">
+          <i class="bi bi-whatsapp"></i>
+          <h3>Whatsapp</h3>
+          <a href="https://wa.me/+201065081826" target="_blank">
+            <p style="font-weight: bolder;">+20 106 508 1826</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 ">
+        <div class="info-box  mb-4">
+          <a href="https://www.facebook.com/DisoverSiwaTours?mibextid=LQQJ4d" target="_blank">
+            <i style="font-weight: bolder;" class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.facebook.com/DisoverSiwaTours?mibextid=LQQJ4d" target="_blank">
+            <h3>FaceBook</h3>
+          </a>
+          <a href="https://www.facebook.com/DisoverSiwaTours?mibextid=LQQJ4d" target="_blank">
+              <p style="font-weight: bolder;">DisoverSiwaTours</p>
             </a>
           </div>
         </div>
         <div class="col-lg-4 ">
           <div class="info-box  mb-4">
-            <a href="https://www.facebook.com/DisoverSiwaTours?mibextid=LQQJ4d" target="_blank">
-              <i style="font-weight: bolder;" class="bi bi-facebook"></i>
+            <a href="https://www.instagram.com/discoversiwa.tours?igsh=dTlkemFhNTliaG9h&utm_source=qr" target="_blank">
+              <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/DisoverSiwaTours?mibextid=LQQJ4d" target="_blank">
-              <h3>FaceBook</h3>
+            <a href="https://www.instagram.com/discoversiwa.tours?igsh=dTlkemFhNTliaG9h&utm_source=qr" target="_blank">
+              <h3>Instagram</h3>
             </a>
-            <a href="https://www.facebook.com/DisoverSiwaTours?mibextid=LQQJ4d" target="_blank">
-                <p style="font-weight: bolder;">DisoverSiwaTours</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 ">
-            <div class="info-box  mb-4">
-              <a href="https://www.instagram.com/discoversiwa.tours?igsh=dTlkemFhNTliaG9h&utm_source=qr" target="_blank">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="https://www.instagram.com/discoversiwa.tours?igsh=dTlkemFhNTliaG9h&utm_source=qr" target="_blank">
-                <h3>Instagram</h3>
-              </a>
-              <a href="https://www.instagram.com/discoversiwa.tours?igsh=dTlkemFhNTliaG9h&utm_source=qr" target="_blank">
-                <p style="font-weight: bolder;">discoversiwa.tours</p>
-              </a>
-            </div>
+            <a href="https://www.instagram.com/discoversiwa.tours?igsh=dTlkemFhNTliaG9h&utm_source=qr" target="_blank">
+              <p style="font-weight: bolder;">discoversiwa.tours</p>
+            </a>
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </div>
+  </section><!-- End Contact Section -->
 
-  </main>
+</main>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  </footer>
-
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</footer>
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 's') {
+      // Find the carousel element
+      var carousel = document.getElementById('carouselBasicExample');
+      // Trigger the next slide programmatically
+      var carouselInstance = new mdb.Carousel(carousel);
+      carouselInstance.next();
+    }
+  });
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
