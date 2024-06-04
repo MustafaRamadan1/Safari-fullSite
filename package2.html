@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 1200px) and (min-width: 996px) {
     .col-6 {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -113,6 +113,12 @@
     .card {
         width: 80%;
         margin-top: 180px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the container without distortion */
     }
 }
 
@@ -150,6 +156,13 @@
     .carousel {
         width: 100%;
         margin-left: 60px;
+    }
+
+
+    .carousel img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
 
     .ourBadge {
@@ -215,13 +228,13 @@
     }
 
     .carousel {
-        width: 100%;
-        margin-left: 60px;
+        width: 93%;
+        margin-left: 3px;
     }
 
     .ourBadge {
-      left: 83%;
-      top:6.5%;
+      left: 75%;
+      top:8.5%;
       display: block;
     }
 
@@ -336,7 +349,7 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next"
-          style="margin-right: 20px;">
+          style="margin-right: 5px; ">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
